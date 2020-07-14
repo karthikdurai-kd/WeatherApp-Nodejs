@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="/images/weather.png">
+        <title>Index Page</title>
+        {{>bootstrapLink}}
+        <link rel="stylesheet" href="/css/styles.css">
+       
+    </head>
+    <body>
+        <div class="div1">
+             {{>header}}
+            <h3 style="color: #3b6978;">Use this site to  get Weather!!!</h3><br/>
+            <form>
+            <input type="text" placeholder="Enter Location" name="location" class="searchLocation">
+            <button class="btn btn-primary" type="submit" value="submit" id="b1">Search</button>
+           
+            </form><br/>
+             <b> <p class="message1"></p></b>
+             <p class="message2"></p>
+        </div>
+     
+        {{>footer}}
+        <script src="/js/script.js"></script>
+    </body>
+</html>
