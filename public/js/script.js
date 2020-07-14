@@ -17,7 +17,7 @@ form.addEventListener('submit', (e)=>{
     //console.log(response);
     response.json().then(data=>{
        if(data.error){
-           console.log(data.error);
+           
            msg1.textContent = data.error;
          
        }
