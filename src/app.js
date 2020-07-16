@@ -9,6 +9,9 @@ const forecast = require('./utils/forecast');
 const viewsPath = path.join(__dirname, '../templates/views') 
 const partialsPath = path.join(__dirname, '../templates/partials');
 
+//Setting up PORT
+const port = process.env.PORT || 3000;
+
 //Setting handlebars and views location
 app.set('view engine', 'hbs'); //using hbs we can render html files dynamically under views folder.
 app.set('views', viewsPath);
@@ -92,6 +95,6 @@ app.get('*', (req, res)=>{
    })
 })
 
-app.listen(3000, ()=>{
-    console.log("Server started successfully at port 3000");
+app.listen(port, ()=>{
+    console.log("Server started successfully at port "+ port);
 })

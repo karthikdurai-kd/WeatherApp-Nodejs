@@ -13,7 +13,7 @@ form.addEventListener('submit', (e)=>{
     msg2.textContent = " ";
         //console.log(button2.value)
     const data = searchTerm.value;
-    fetch('http://localhost:3000/weather?address='+data).then(response=>{
+    fetch('/weather?address='+data).then(response=>{
     //console.log(response);
     response.json().then(data=>{
        if(data.error){
