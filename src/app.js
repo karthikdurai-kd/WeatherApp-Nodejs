@@ -6,7 +6,7 @@ const geoCode = require('./utils/geoCode');
 const forecast = require('./utils/forecast');
 
 //Setting up Path
-const viewsPath = path.join(__dirname, '../templates/views') 
+const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials');
 
 //Setting up PORT
